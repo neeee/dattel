@@ -1,0 +1,26 @@
+{
+  "name": "dattel",
+  "version": "0.0.1",
+  "description": "Painlessly eal with time and dates",
+  "repository": "https://github.com/neeee/dattel",
+  "author": "Samuel Raub <samuel.raub@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "source": "src/index.ts",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.modern.js"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.module.js",
+  "unpkg": "./dist/index.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "devDependencies": {
+    "microbundle": "^0.14.2",
+    "prettier": "^2.5.1"
+  }
+}
