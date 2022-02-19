@@ -1,9 +1,4 @@
-function toDate(ISOString: string): Date;
-function toDate(UNIXTimestamp: number): Date;
-function toDate(datelike: any)  {
-  return new Date(datelike)
-}
+// TODO: calculate with dates
+// TODO: toString (formatting)
 
-toDate(new Date().getTime())
-
-export { toDate };
+export { toDate, toUtc } from './lib/functions';
